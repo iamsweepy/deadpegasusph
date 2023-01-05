@@ -1,0 +1,55 @@
+.abouttext p{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+
+}
+
+.abouttext img{
+    height: 170px;
+    width: 150px;
+    padding-top: 20px;
+}
+
+@media only screen and (max-width: 1450px) {
+    .abouttext p{
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+    }
+    .abouttext img{
+        height: 140px;
+        width: 120px;
+        padding-top: 18px;
+    }
+}
+
+@media only screen and (max-width: 1070px) {
+    .abouttext p{
+        font-size: 17px;
+        font-weight: bold;
+        color: white;
+    }
+    .abouttext img{
+        height: 120px;
+        width: 100px;
+        padding-top: 16px;
+    }
+}
+
+@media only screen and (max-width: 845px) {
+    .banner{
+        height:929px;
+    }
+
+    .abouttext p{
+        font-size: 10px;
+        font-weight: bold;
+        color: white;
+    }
+    .abouttext img{
+        height: 90px;
+        width: 70px;
+        padding-top: 14px;
+    }
+}

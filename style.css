@@ -1,0 +1,374 @@
+*{
+    margin: 0px;
+    padding: 0px;
+	box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.header{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    height: 70px;
+    transition: all 0.30s ease-in-out;
+    background-color: rgba(0,0,0, 0.75);
+    user-select: none;
+}
+
+.header ul{
+    list-style: none;
+    line-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header ul li a{
+    text-decoration: none;
+    margin: 0 50px;
+    font-size:  16px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+}
+
+.logo{
+    height: 70px;
+    padding-left:30px;
+    padding-right:30px;
+    display: flex;
+}
+
+.header.active{
+    background: transparent;
+    pointer-events: none;
+    background-size: contain;
+}
+
+.header.active a{
+    color: transparent;
+    visibility: hidden;
+}
+
+.header ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #ffffff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.header ul li:hover::after{
+    width: 50%;
+}
+
+
+
+/*BANNER AREA*/
+
+.banner{
+    height:929px;
+    width: 100% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient(rgba(4,9,30,0.75),rgba(4,9,30,0.75)),url(P1BG.jpg);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    user-select: none;
+}
+
+.bannertext h1{
+    font-size: 100px;
+    font-weight: bold;
+    color: white;
+}
+
+.bannertext p{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+
+}
+
+/*CONTENT*/
+.title-about{
+    display: flex;
+    flex-direction: column;
+    height: 90px;
+    width: 100% ;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: white;
+    user-select: none;
+    padding-top: 30px;
+}
+
+.title-about h1{
+    letter-spacing: 20px;
+    font-size: 70px;
+    color: black;
+    user-select: none;
+}
+
+
+/* PRODUCT CONTAINERS */
+.container{
+    box-sizing: border-box;
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: repeat(1, 1fr);
+    height: auto;
+    background-size: contain;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.box{
+    margin: auto;
+    width:80%;
+    height: auto;
+    background: white;
+    box-sizing: border-box;
+    box-shadow: -1px 0 20px rgba(0,0,0, 0.25);
+    background-size: contain;
+}
+
+.container img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+}
+
+.box:hover{
+    box-shadow: 0 3px 6px rgba(0,0,0, 0.16),
+    0 3px 6px rgba (0,0,0,0.23);
+    transform: translate(0px, -10px);
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+/*FOOTER*/
+.footer{
+        position: relative;
+        bottom:0;
+        height: 90;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        width: 100%;
+        background-color: rgba(0,0,20,0.88);
+        user-select: none;
+        padding-bottom: 20px;
+    }
+    
+.footer h1{
+        padding-top: 20px;
+        font-size: 30px;
+        color: white;
+        padding-left: 4rem;
+        padding-bottom: 10px;
+    }
+    
+.footer p{
+        font-size: 20px;
+        list-style: none;
+        color: white;
+        padding-left: 4rem;
+    }
+    
+.footer p a{
+        text-decoration: none;
+        color: white;
+        padding-left:10px;
+    }
+
+.footer h2 {
+    color: white;
+    padding-top: 10px;
+    padding-left: 4rem;
+}
+
+
+            @media only screen and (max-width: 1250px) {
+                /*CONTENT*/
+                .title-about{
+                    display: flex;
+                    flex-direction: column;
+                    height: 90px;
+                    width: 100% ;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    background-color: white;
+                    user-select: none;
+                    padding-top: 30px;
+                }
+
+                .title-about h1{
+                    letter-spacing: 20px;
+                    font-size: 50px;
+                    color: black;
+                    user-select: none;
+                }
+            }
+
+
+
+
+            @media only screen and (max-width: 845px) {
+
+                .header{
+                    position: fixed;
+                    width: 100%;
+                    z-index: 1000;
+                    height: 70px;
+                    transition: all 0.30s ease-in-out;
+                    background-color: rgba(0,0,0, 0.75);
+                    user-select: none;
+                }
+                
+                .header ul{
+                    list-style: none;
+                    line-height: 30px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                
+                .header ul li a{
+                    text-decoration: none;
+                    margin: 0 10px;
+                    font-size:  16px;
+                    text-transform: uppercase;
+                    color: white;
+                    font-weight: 600;
+                    text-align: center;
+                }
+                
+                .logo{
+                    height: 70px;
+                    padding-left:15px;
+                    padding-right:15px;
+                    display: flex;
+                }
+                
+                .header.active{
+                    background: transparent;
+                    pointer-events: none;
+                    background-size: contain;
+                }
+                
+                .header.active a{
+                    color: transparent;
+                    visibility: hidden;
+                }
+                
+                .header ul li::after{
+                    content: '';
+                    height: 3px;
+                    width: 0;
+                    background: #ffffff;
+                    display: block;
+                    margin: auto;
+                    transition: 0.5s;
+                }
+                .header ul li:hover::after{
+                    width: 50%;
+                }
+                
+
+
+                /*BANNER AREA*/
+                
+                .banner{
+                    height:500px;
+                    width: 100% ;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    background-image: linear-gradient(rgba(4,9,30,0.75),rgba(4,9,30,0.75)),url(P1BG.jpg);
+                    background-size: cover;
+                    background-position: center center;
+                    position: relative;
+                    user-select: none;
+                }
+                
+                .bannertext h1{
+                    font-size: 60px;
+                    font-weight: bold;
+                    color: white;
+                }
+                
+                .bannertext p{
+                    font-size: 17px;
+                    font-weight: bold;
+                    color: white;
+                }
+
+                                
+                /*CONTENT*/
+                .title-about{
+                    display: flex;
+                    flex-direction: column;
+                    height: 90px;
+                    width: 100% ;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    background-color: white;
+                    user-select: none;
+                    padding-top: 30px;
+                }
+
+                .title-about h1{
+                    letter-spacing: 20px;
+                    font-size: 30px;
+                    color: black;
+                    user-select: none;
+                }
+            }
+
+@media only screen and (max-width: 1250px) {
+    .footer{
+        grid-template-columns: 1.5fr 1fr;
+    }
+    .footer h1{
+        padding-top: 20px;
+        font-size: 15px;
+        color: white;
+        padding-left: 4rem;
+        padding-bottom: 10px;
+    }
+    
+    .footer p{
+        font-size: 10px;
+        list-style: none;
+        color: white;
+        padding-left: 4rem;
+    }
+    
+    .footer p a{
+        text-decoration: none;
+        color: white;
+        padding-left:10px;
+    }
+
+    .footer h2 {
+    font-size: 15px;
+    color: white;
+    padding-top: 10px;
+    padding-left: 4rem;
+}
+}
